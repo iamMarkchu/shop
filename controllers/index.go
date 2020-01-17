@@ -7,7 +7,7 @@ import (
 
 // router  /
 func Index(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"page": "index",
+	c.HTML(http.StatusOK, "index.html", gin.H{
+		"Title": "index2",
 	})
 }
